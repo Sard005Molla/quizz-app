@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quiz Dashboard</title>
+<link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+
+<div class="container text-center mt-5">
+
+    <!-- LOGO -->
+    <img src="images/app-logo.png" alt="Logo" style="width:100px; margin-bottom:10px;">
+
+    <!-- TITLE -->
+    <h1 style="font-size:40px; margin-bottom:20px;">
+        🎯 Ultimate Quiz Platform
+    </h1>
+
+    <!-- BUTTONS -->
+    <div style="margin-bottom:20px;">
+        <a href="create-quiz.html" class="btn btn-primary btn-lg m-2">Create Quiz</a>
+        <a href="stats.html" class="btn btn-success btn-lg m-2">View Stats</a>
+        <button onclick="loadAPIQuiz()" class="btn btn-warning btn-lg m-2">
+            Start a Quiz Right Away!
+        </button>
+    </div>
+
+    <!-- TABLE -->
+    <table class="table mt-3">
+        <thead>
+            <tr><th>Quiz</th><th>Actions</th></tr>
+        </thead>
+        <tbody id="quizTable"></tbody>
+    </table>
+
+</div>
+
+<script src="scripts/index.js"></script>
+</body>
+</html>
