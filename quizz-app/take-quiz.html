@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Take Quiz</title>
+<link rel="stylesheet" href="styles/main.css">
+<link rel="stylesheet" href="styles/take.css">
+</head>
+
+<body>
+<div class="container">
+
+<h2 id="title"></h2>
+
+<!-- Question Counter -->
+<h4 id="counter"></h4>
+
+<!-- Question -->
+<div id="qbox"></div>
+
+<!-- Progress Bar -->
+<div class="progress-container">
+    <div id="progress-bar"></div>
+</div>
+<p class="status-text">Your current status</p>
+
+<!-- Buttons -->
+<div class="nav-buttons">
+    <button id="backBtn" onclick="prev()">Back</button>
+    <button id="nextBtn" onclick="next()">Next</button>
+    <button id="endBtn" onclick="endQuiz()">End Quiz</button>
+</div>
+
+</div>
+
+<script src="scripts/take-quiz.js"></script>
+</body>
+</html>
