@@ -1,0 +1,35 @@
+#avg {
+    font-size: 28px;
+    color: #00ffcc;
+    margin-top: 20px;
+}
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+    margin: 18px 0;
+}
+
+.stat-card, .result-row {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.14);
+    border-radius: 8px;
+    padding: 14px;
+}
+
+.stat-card span {
+    display: block;
+    opacity: 0.8;
+    margin-bottom: 6px;
+}
+
+.stat-card strong {
+    color: #00ffcc;
+    font-size: 26px;
+}
+
+.result-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+}
