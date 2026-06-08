@@ -1,0 +1,18 @@
+<?php
+$host = "127.0.0.1";
+$user = "root";
+$password = "";
+$database = "quiz_app";
+$port = 3307;
+
+mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
+
+try {
+    $conn = new mysqli($host, $user, $password, $database, $port);
+    $conn->set_charset("utf8mb4");
+} catch (mysqli_sql_exception $e) {
+    error_log("Database connection failed: " . $e->getMessage());
+    http_response_code(500);
+    die("Database connection failed. Please make sure MySQL is running in XAMPP.");
+}
+?>
